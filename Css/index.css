@@ -158,40 +158,47 @@ img {
   background: #111111;
 }
 
-/* RESPONSIVE TABLET */
-@media (max-width: 900px) {
+@media (max-width: 880px) {
+
   .login-wrapper {
-    grid-template-columns: 1fr;
-    height: auto;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    max-width: 600px;
+    margin: 30px auto;
   }
 
-  .login-izquierdo {
-    text-align: center;
-    padding: 60px 40px;
-  }
-
+  /* FORMULARIO ARRIBA */
   .login-derecho {
-    padding: 60px 40px;
+    order: 1;
+    padding: 50px 30px;
+    text-align: center;
   }
-}
 
-/* RESPONSIVE MOBILE */
-@media (max-width: 480px) {
-  .login-wrapper {
-    margin: 20px;
+  /* IMAGEN ABAJO */
+  .login-izquierdo {
+    order: 2;
+    padding: 20px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-izquierdo img,
+  .imagenprincipallogin {
+    width: 85%;
+    max-width: 350px;
     border-radius: 16px;
-  }
-
-  .login-izquierdo h2,
-  .login-derecho h2 {
-    font-size: 32px;
+    object-fit: cover;
   }
 
   .login-form input {
-    padding: 15px;
- }
+    font-size: 14px;
+    padding: 14px 16px;
+  }
 
   .btn-principal {
+    width: 100%;
     padding: 14px;
   }
 }
