@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Amanua</title>
+    <link rel="stylesheet" href="../Css/index.css" />
+</head>
+
+<body>
+
+ <main class="login-wrapper">
+
+    <div class="login-izquierdo">
+        <img src="paginas/Multimedia/login.png" alt="Amanua" class="imagenprincipallogin" />
+    </div>
+
+    <div class="login-derecho">
+
+        <h2>Bienvenida</h2>
+        <p>Ingresá para continuar con tu ritual de cuidado natural.</p>
+
+        <div class="errors">
+            <div id="empty_mail" class="error"></div>
+            <div id="empty_psw" class="error"></div>
+            <div id="mail_error" class="error"></div>
+            <div id="psw_error" class="error"></div>
+        </div>
+
+        <form id="form_login" novalidate class="login-form">
+            <input id="id_mail" type="email" placeholder="Email">
+            <input id="id_psw" type="password" placeholder="Contraseña">
+
+            <button id="btn_login" class="btn-principal">Ingresar</button>
+        </form>
+
+    </div>
+
+ </main>
+ <script src="js/index.js"></script>
+</body>
+</html>

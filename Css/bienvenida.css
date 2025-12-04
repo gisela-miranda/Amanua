@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* TIPOGRAFIAS */
+
+h1 {
+  font-family: Manrope;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #6E745F;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+h2 {
+  font-family: Manrope;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #111111;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: Manrope;
+  font-size: 18px;
+  color: #111111;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: Manrope;
+  font-size: 20px;
+  color: #899F87;
+  font-weight: 500;
+}
+
+p  {
+  font-family: Manrope;
+  font-size: 14px;
+  color: #505050;
+  font-weight: 400;
+}
+
+a {
+  font-family: Manrope;
+  font-size: 12px;
+  color: #111111;
+  font-weight: 400;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  background-color: #E6E3D8;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 130px;
+  height: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  gap: 20px;   /* separa automáticamente cada link */
+}
+
+nav a {
+  text-decoration: none;
+  color: #111111;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+  color: #111111;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.iconoshead {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.icon-btn:hover {
+  opacity: 0.6;
+}
+
+/* HERO */
+
+.hero {
+  background-color: #E6E3D8;
+  padding: 90px 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+button {
+  background-color: #6b725f;
+  color: #fff;
+  font-size: 14px;
+  font-family: Manrope, sans-serif;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.heroimg img {
+  width: 680px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+
+/* NOSOTROS */
+
+.Nosotros {
+  background-color: #F7F5F2;
+  padding: 100px 80px;
+  display: flex;
+  gap: 120px;  
+  align-items: flex-start;
+  position: relative;
+}
+
+.nosotroderecha {
+  max-width: 520px;
+}
+
+.about-line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #C8D8C0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* INGREDIENTES */
+
+.ingredientes {
+  background-color: #F7F5F2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 80px 100px;
+  align-items: center;
+}
+
+.parteuno img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.partedos {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.item .icono {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.item h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.item p {
+  margin-top: 6px;
+  max-width: 360px;
+}
+
+.item h3, .item p {
+  display: block;
+}
+
+/* CTA SECTION */ 
+
+.ctasection {
+  width: 100%;
+  background-color: #B8B4AE;
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ctasection p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.ctasection:hover {
+  background-color: #111111;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* PRODUCTOS */
+
+.Productos {
+  background: #E5E3D7;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #E5E3D7;
+  border: 1px solid #B8B4AE;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto-img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.info {
+  width: 100%;
+  text-align: left;
+}
+
+.agregar {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.agregar:hover {
+  background: #111111;
+  color: white;
+}
+
+
+
+/* RESEÑAS */
+
+.Reseñas {
+  background-color: #F7F5F2;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.reseñasgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.estadistica {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+  justify-items: start;
+}
+
+.reseñasimagen {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.reseñaimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.reseñauno,
+.reseñasimagen2 {
+  position: absolute;
+  background: #F7F5F2;
+  padding: 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  width: 240px;
+  font-size: 14px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.reseñauno {
+  top: 25%;
+  transform: translateX(30%);
+}
+
+.reseñasimagen2 {
+  left: 0;
+  bottom: 0;
+  transform: translateX(-30%);
+}
+
+.nombre {
+  display: block;
+  margin-top: 8px;
+  font-family: Manrope;
+  font-size: 13px;
+  color: #6F7564;
+}
+
+/* CONTACTO */
+
+.Contacto {
+  width: 100%;
+  padding: 80px 20px;
+  text-align: center;
+  background: #F7F5F2;
+}
+
+.contactosection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.mapa {
+  flex: 1 1 500px;
+  max-width: 550px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contactoformulario {
+  flex: 1 1 380px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactoformulario input,
+.contactoformulario textarea {
+  width: 100%;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid #E6E0D9;
+  background: #F7F5F2;
+  font-family: Manrope;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactoformulario input:focus,
+.contactoformulario textarea:focus {
+  font-family: Manrope;
+  border-color: #E6E0D9;
+  box-shadow: 0 0 0 3px rgba(168,164,139,0.2);
+}
+
+.contactoformulario textarea {
+  font-family: Manrope;
+  height: 140px;
+  resize: none;
+}
+
+.contactoformulario button {
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-weight: 600;
+}
+
+.contactoformulario button:hover {
+  background: #111111;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #E6E3D8;
+  padding: 60px 0 30px;
+  color: #1A1A1A;
+}
+
+.footerseccion {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  padding: 0 30px;
+}
+
+.footerlogo {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.footerdescripcion {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.footersecciones h4,
+.footercontacto h4,
+.footerredes h4 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footersecciones ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footersecciones li {
+  margin-bottom: 10px;
+}
+
+.footersecciones a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.2s ease;
+}
+
+.footersecciones a:hover {
+  color: #111111;
+}
+
+.footercontacto p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.material-symbols-outlined {
+  font-size: 20px;
+}
+
+.footerredes .icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #6F7564;
+  transition: 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #111111;
+}
+
+.footerbajada {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  /* HEADER */
+  .header {
+    padding: 14px 20px;
+  }
+
+  nav {
+    display: none; /* opcional: si querés esconder menú en mobile */
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .heroimg img {
+    width: 100%;
+  }
+
+  /* NOSOTROS */
+  .Nosotros {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .nosotroderecha {
+    max-width: 100%;
+  }
+
+  /* INGREDIENTES */
+  .ingredientes {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+
+  .item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .item p {
+    max-width: 100%;
+  }
+
+  /* PRODUCTOS */
+  .Productos {
+    padding: 40px 0;
+    gap: 25px;
+  }
+
+  .card {
+    max-width: 85%;
+  }
+
+  /* RESEÑAS */
+  .reseñasgrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .reseñauno, .reseñasimagen2 {
+    position: relative;
+    transform: none;
+    margin: 20px auto 0;
+  }
+
+  /* CONTACTO */
+  .contactosection {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* FOOTER */
+  .footerseccion {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footerredes .icons {
+    justify-content: center;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    padding: 18px 30px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 30px;
+    gap: 50px;
+  }
+
+  .heroimg img {
+    width: 90%;
+  }
+
+  /* NOSOTROS */
+  .Nosotros {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+  }
+
+  /* INGREDIENTES */
+  .ingredientes {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .item {
+    justify-content: center;
+  }
+
+  /* PRODUCTOS */
+  .Productos {
+    gap: 25px;
+  }
+
+  .card {
+    max-width: 260px;
+  }
+
+  /* RESEÑAS */
+  .reseñasgrid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACTO */
+  .contactosection {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .mapa, .contactoformulario {
+    max-width: 100%;
+  }
+
+  /* FOOTER */
+  .footerseccion {
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footerredes .icons {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 680px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    display: none;
+    border-top: 1px solid #eee;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+}
+
